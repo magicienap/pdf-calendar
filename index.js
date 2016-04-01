@@ -1,3 +1,2 @@
 'use strict';
-exports.Calendar    = require('./lib/calendar');
-exports.PdfCalendar = require('./lib/pdf-calendar');
+module.exports = require('./lib/pdf-calendar');

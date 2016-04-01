@@ -1,0 +1,30 @@
+{
+  "name": "pdf-calendar",
+  "version": "0.1.0",
+  "description": "Generate basic PDF calendars",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magicienap/pdf-calendar.git"
+  },
+  "keywords": [
+    "calendar",
+    "pdf"
+  ],
+  "author": "Antoine Proulx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/magicienap/pdf-calendar/issues"
+  },
+  "homepage": "https://github.com/magicienap/pdf-calendar#readme",
+  "dependencies": {
+    "moment": "^2.12.0",
+    "pdfkit": "^0.7.2"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.4.0"
+  },
+  "scripts": {
+    "doc": "./node_modules/.bin/jsdoc -d doc -r lib"
+  }
+}

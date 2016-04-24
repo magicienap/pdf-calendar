@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Générer une page d'un calendrier mensuel en PDF</title>
+
+        <!-- jQuery and Semantic UI -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+
+        <style>
+            .ui.header:first-child {
+                margin-top: calc(2rem - .14285em);
+            }
+
+            iframe {
+                width: 100%;
+                height: 685px;
+                border: none;
+            }
+        </style>
+        <script src="web.js"></script>
+    </head>
+
+    <body>
+        <div class="ui one column grid container">
+            <div class="column">
+                <h1 class="ui dividing header">Générer une page d'un calendrier mensuel en PDF</h1>
+
+                <div class="ui grid">
+                    <div class="four wide column">
+                        <form class="ui form">
+                            <div class="field">
+                                <label for="month">Mois</label>
+                                <select id="month" name="month">
+                                    <option value="01">Janvier</option>
+                                    <option value="02">Février</option>
+                                    <option value="03">Mars</option>
+                                    <option value="04">Avril</option>
+                                    <option value="05">Mai</option>
+                                    <option value="06">Juin</option>
+                                    <option value="07">Juillet</option>
+                                    <option value="08">Août</option>
+                                    <option value="09">Septembre</option>
+                                    <option value="10">Octobre</option>
+                                    <option value="11">Novembre</option>
+                                    <option value="12">Décembre</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label for="year">Année</label>
+                                <select id="year" name="year">
+                                    <option value="2015">2015</option>
+                                    <option value="2016" selected="selected">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="twelve wide column">
+                        <iframe></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

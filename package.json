@@ -18,13 +18,18 @@
   },
   "homepage": "https://github.com/magicienap/pdf-calendar#readme",
   "dependencies": {
+    "blob-stream": "^0.1.3",
+    "brfs": "^1.4.3",
     "moment": "^2.12.0",
     "pdfkit": "^0.7.2"
   },
   "devDependencies": {
-    "jsdoc": "^3.4.0"
+    "browserify": "^13.0.0",
+    "jsdoc": "^3.4.0",
+    "uglify-js": "git://github.com/mishoo/UglifyJS2.git#harmony"
   },
   "scripts": {
-    "doc": "./node_modules/.bin/jsdoc -d doc -r lib"
+    "doc": "./node_modules/.bin/jsdoc -d doc -r lib",
+    "build-web": "./node_modules/.bin/browserify -t brfs web/src.js | ./node_modules/.bin/uglifyjs > web/web.js"
   }
 }

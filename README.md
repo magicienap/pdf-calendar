@@ -8,5 +8,7 @@ Generate a basic monthly calendar in PDF
 
 ```javascript
 var PdfCalendar = require('pdf-calendar');
-PdfCalendar.generate(2016, 3, "201603.pdf", "en");
+PdfCalendar.generateFile(2016, 3, "201603.pdf", "en");
 ```
+
+You can also use the web page in `web/`.

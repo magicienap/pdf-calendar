@@ -1,7 +1,7 @@
 {
   "name": "pdf-calendar",
   "version": "0.1.0",
-  "description": "Generate basic PDF calendars",
+  "description": "Generate a basic monthly calendar in PDF",
   "main": "index.js",
   "repository": {
     "type": "git",
